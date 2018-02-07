@@ -1,4 +1,4 @@
-rewrite of https://github.com/djm158/github-starred-issues because using github's API purely client side exposes your api key (which is necessary to avoid their githubs [rate limit](https://developer.github.com/v3/rate_limit/))
+rewrite of https://github.com/djm158/github-starred-issues because using github's API purely client side exposes your api key (which is necessary to avoid Github's [rate limit](https://developer.github.com/v3/rate_limit/))
 
 ## Install
 
