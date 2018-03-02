@@ -1,11 +1,17 @@
 .list {
-    display: inline-block;
-    width: 30%;
-    height: 400px;
-    overflow: auto;
-    margin: 10px 20px 0;
-    border: 2px solid black;
-    padding: 5px 10px;
+  display: inline-block;
+  width: 30%;
+  height: 400px;
+  overflow: auto;
+  margin: 10px 20px 0;
+  border: 1px solid black;
+  padding: 5px 10px;
+  transition: box-shadow .3s;
+
+}
+
+.list:hover {
+  box-shadow: 0 0 10px rgba(33,33,33,.6); 
 }
 
 .scrollbar-outer {

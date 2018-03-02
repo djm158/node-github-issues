@@ -28,4 +28,5 @@ html(lang="en")
     script.
       var scrollables = document.getElementsByClassName("scrollbar-inner");
       for(var i = 0; i < scrollables.length; i++)
-        scrollables[i].style.cssText ="padding-right: " + scrollables[i].clientWidth - scrollables[i].offsetWidth + "px;";
+        //- scrollables[i].style.cssText ="padding-right: " + scrollables[i].clientWidth - scrollables[i].offsetWidth + "px;";
+        scrollables[i].setAttribute("style", "padding-right:"+(scrollables[i].offsetWidth - scrollables[i].clientWidth + 2) + "px;");
