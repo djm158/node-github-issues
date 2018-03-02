@@ -5,6 +5,8 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title user starred repo issues
+    style
+      include style.css
   body
     .container
       form(action="/", method="post")
@@ -14,9 +16,10 @@ html(lang="en")
       if data
         if issues
           -for(var i = 0; i < data.length; i++)
-            h1= data[i].name
-            p= data[i].description
-            each issue in issues[i]
-              li= issue
+            .list
+              h1= data[i].name
+              p= data[i].description
+              each issue in issues[i]
+                li= issue
       if error
         p= error
