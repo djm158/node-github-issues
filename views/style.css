@@ -1,4 +1,29 @@
 .list {
     display: inline-block;
-    max-width: 50%;
+    width: 30%;
+    height: 400px;
+    overflow: auto;
+    margin: 10px 20px 0;
+    border: 2px solid black;
+    padding: 5px 10px;
+}
+
+.scrollbar-outer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+
+.scrollbar-inner {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
 }

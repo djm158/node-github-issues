@@ -17,9 +17,15 @@ html(lang="en")
         if issues
           -for(var i = 0; i < data.length; i++)
             .list
-              h1= data[i].name
-              p= data[i].description
-              each issue in issues[i]
-                li= issue
+              .scrollbar-outer
+                .scrollbar-inner
+                  h1= data[i].name
+                  p= data[i].description
+                  each issue in issues[i]
+                    li= issue
       if error
         p= error
+    script.
+      var scrollables = document.getElementsByClassName("scrollbar-inner");
+      for(var i = 0; i < scrollables.length; i++)
+        scrollables[i].style.cssText ="padding-right: " + scrollables[i].clientWidth - scrollables[i].offsetWidth + "px;";
